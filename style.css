@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   box-sizing: border-box;
+}
+::-webkit-scrollbar{
+   display: none;
+}
+body{
+   font-family: 'PT Sans', sans-serif;
+   background: linear-gradient(#4958FA, #20CF4D);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 100vh;
+}
+.container{
+  width: 95%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.container ul{
+  width: 100%;
+}
+.container ul li{
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #C5C8E9;
+  margin: 5px 0;
+}
+.container ul li img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%
+}
+li.draggable :where(img, h3, span){
+  opacity: 0;
+}
